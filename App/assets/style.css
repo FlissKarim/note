@@ -1,0 +1,357 @@
+body {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  background-color:#fefffe;
+}
+
+.link {
+	color:blue;
+	cursor:pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
+div {
+   /*border: 2px solid black;*/
+  cursor: pointer;
+}
+
+input {
+  border:none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.title {
+  position: relative;
+  width: 80%;
+  height: 12%;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.bar {
+  width:100%;
+  height:10%;
+  position:relative;
+  border-bottom: 2px solid black;
+  background-color: #00ab44;
+}
+
+.bar .return-button{
+  position:absolute;
+  left:0;
+  height:100%;
+  color:white;
+  font-size:24px;
+  font-weight: bold;
+  background-color: #00ab44;
+}
+.bar .search-button{
+  position:absolute;
+  height:100%;
+  right:0;
+  color:white;
+  font-size:24px;
+  font-weight: bold;
+  background-color: #00ab44;
+}
+
+.enter {
+  position: relative;
+  width: 250px;
+  height: 40px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.enter input{
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  border-bottom: 2px solid #00ab44;
+}
+
+.search {
+  width:90%;
+  height: 40px;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.search input{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align:center;
+  border-bottom: 2px solid black;
+}
+
+form{
+  text-align:center;
+}
+
+.update-button {
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  border: solid 2px #00ab44;
+  background-color: white;
+  color: #00ab44;
+  font-size:20px;
+}
+
+.update-button:hover {
+  border: solid 2px #00ab44;
+  background-color: #00ab44;
+  color:  white;
+}
+
+.delete-button {
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  border: solid 2px #ad253c;
+  background-color: white;
+  color: #ad253c;
+  font-size:20px;  
+}
+
+.delete-button:hover {
+  border: solid 2px #ad253c;
+  background-color: #ad253c;
+  color:  white;
+}
+.option-button-z {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 50% 50% 50%;
+  bottom:5%;
+  left:5%;
+  background-color: #a93226;
+  color: white;
+  font-weight:bold;
+  font-size:24px;
+}
+
+.account-button-z {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 50% 50% 50%;
+  bottom:5%;
+  left:42%;
+  background-color: orange;
+  color: white;
+  font-weight:bold;
+  font-size:24px;
+}
+/* verion du boutton flotant sur l'ecran */
+.circle-button-z {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom:5%;
+  right:5%;
+  background-color: #00ab44;
+  color: white;
+  font-weight:bold;
+  font-size:24px;
+}
+
+.circle-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #00ab44;
+  color: white;
+  font-weight:bold;
+}
+
+.note-block {
+  position:relative;
+  width:100%;
+  height:80px;
+  border-bottom: 2px solid #00ab44;
+
+}
+
+.note-block:hover{
+  color:white;
+  animation: anim 0.8s;
+  background-color: #00ab44;
+}
+@keyframes anim {
+  from {background-color: white;};
+  to {background-color: #00ab44;};
+}
+
+.note-block .preview {
+  position: relative;
+  width:90%;
+  height:100%;
+}
+
+.note-block .preview .head {
+  margin:5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.note-block .preview .body {
+  margin:5px;
+  font-size: 16px;
+}
+
+.note-block .favorite {
+  float:right;
+  height:100%;
+}
+
+.note-block .favorite {
+  float:right;
+  height:100%;
+}
+
+.favorite i{
+  position: relative;
+  top:30%;
+  font-weight:bold;
+  font-size:24px;
+  color:gray;
+}
+
+.note-block .favorite {display:inline-block;}
+.note-block .preview {display:inline-block;}
+
+.note-list {
+  position:relative;
+  width:100%;
+  height:320px;
+  bottom:0px;
+  overflow-y:scroll;
+}
+
+.note {
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+}
+
+.note .head {
+  padding:0;
+  margin:0;
+  font-size:24px;
+  font-weight:bold;
+  height:10%;
+  border-bottom: 2px solid #00ab44;
+}
+
+.note .body {
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+}
+
+#head {
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+  font-size:20px;
+}
+#body {
+  font-size:20px;
+  padding:0;
+  margin:0;
+  width:100%;
+  height:73%;
+  overflow-y: scroll;
+  overflow-x:hide;
+}
+/* quand on clique sur le button (...) */
+.list-z {
+  background-color: black;
+  width:100%;
+  height:31.2%;
+  position: absolute;
+  bottom:0%;
+  overflow-y:scroll;
+  text-align:center;
+}
+.element-z {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 50px;
+  color:white;
+}
+
+.element-z:hover {
+  color: black;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.news-container {
+  position:absolute;
+  top:2%;
+  left:50%;
+}
+
+.notification {
+  position:relative;
+  text-align:center;
+  left:-50%;
+  width:280px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.content {
+  color:white;
+  font-weight:bold;
+}
+
+.markup {
+  width:100%;
+  height:5%;
+}
+.markup-btn {
+  width:25%;
+  height:100%;
+  color:white;
+  background-color: #555555;
+}
+.markup-btn:hover {
+  background-color: #33D1FF;
+}
+.markup-btn:active {
+  background-color: #11C0EE;
+}
+#add, #menu, #account, #option, #note-in-return, #note-in-search {
+  position: relative;
+  top:25%;
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
